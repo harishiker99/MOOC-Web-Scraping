@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}" type="text/css">
+  <link rel="icon" href="../../../../Downloads/iconfinder_coursera-2048-black_167639.png">
+</head>
+
+<body class="bg-primary backgro text-info" style="	background-image: url('{{url_for('static',filename='img/backg.jpg')}}');	background-position: top left;	background-size: 100%;	background-repeat: repeat;	box-shadow: 0px 0px   black;	text-shadow: 1px 1px 0px grey;">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="	text-shadow: 2px 2px 4px black;">
+    <div class="container"> <a class="navbar-brand text-primary" href="#">
+        <i class="fa d-inline fa-lg fa-circle-o"></i>
+        <b>COURSWAY</b>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar5">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar5">
+        <ul class="navbar-nav ml-auto"></ul> <a class="btn btn-outline-primary navbar-btn ml-md-2" href="https://github.com/">Github</a>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5" style="background-attachment: fixed;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-8 text-center">
+          <h1 class="text-white" style="	text-shadow: 02px 2px 0px black;">All your courses in one place!</h1>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-6 p-3">
+          <div class="card">
+            <div class="card-body">
+                <a href="{{brand1[0][1]}}">
+              <h4 class="card-title text-body" style="text-shadow: grey 1px 1px 0px;">COURSERA</h4><img class="img-fluid d-block" src="{{brand1[0][4]}}" style="">
+                <div class="col-md-12 w-100" style=""><h5>{{brand1[0][0]}}</h5></div>
+              <div class="col-md-12 w-100" style=""><h6>{{brand1[0][2]}}</h6></div>
+              <div class="col-md-12 w-100" style=""></div>
+                </a>
+            </div>
+          </div>
+        <div class="row">
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 p-3">
+          <div class="card">
+            <div class="card-body">
+                <a href="{{brand2[0][1]}}">
+              <h4 class="card-title text-body" style="	text-shadow: 1px 1px 0px grey;">FutureLearn</h4>
+              <img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-1.svg">
+              <div class="col-md-12 w-100"><h5>{{brand2[0][0]}}</h5></div>
+              <div class="col-md-12 w-100"><h6>{{brand2[0][2]}}</h6></div>
+                 </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 p-3">
+          <div class="card">
+            <div class="card-body">
+                <a href="{{brand3[0][1]}}">
+              <h4 class="card-title text-dark" style="	text-shadow: 1px 1px 0px grey;">Vskills</h4><img class="img-fluid d-block" src="{{brand3[0][3]}}">
+              <div class="col-md-12 w-100"><h5>{{brand3[0][0]}}</h5></div>
+              <div class="col-md-12 w-100"><h5>{{brand3[0][2]}}</h5></div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
